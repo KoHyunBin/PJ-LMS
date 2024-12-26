@@ -1,0 +1,11 @@
+server:
+  servlet:
+    encoding:
+      force-response: "true" #클라이언트로 응답을 보낼 때 응답 인코딩 설정을 강제로 사용
+    context-path : /api #base-url #애플리케이션의 기본 URL 경로 /api로 설정
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB #업로드 가능한 단위 파일의 최대 크키 50MB로 제한
+      max-request-size: 50MB #업로드 요청 전체의 최대 크기를 50MB로 제한
